@@ -1,0 +1,643 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>阜阳师范大学西湖校区地图 | 双向加权匹配算法</title><meta name="author" content="北邮 北师 法大 硕博生 合力制作"><meta name="copyright" content="北邮 北师 法大 硕博生 合力制作"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="阜阳师范大学西湖校区 · 全要素路网与建筑地图        * { box-sizing: border-box; margin: 0; padding: 0; }     body {       font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阜阳师范大学西湖校区地图">
+<meta property="og:url" content="http://example.com/post/7ed08.html">
+<meta property="og:site_name" content="双向加权匹配算法">
+<meta property="og:description" content="阜阳师范大学西湖校区 · 全要素路网与建筑地图        * { box-sizing: border-box; margin: 0; padding: 0; }     body {       font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-s">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png">
+<meta property="article:published_time" content="2026-09-02T14:39:40.977Z">
+<meta property="article:modified_time" content="2026-09-02T14:43:43.391Z">
+<meta property="article:author" content="北邮 北师 法大 硕博生 合力制作">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/post/7ed08.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50000,"languages":{"author":"作者: 北邮 北师 法大 硕博生 合力制作","link":"链接: ","source":"来源: 双向加权匹配算法","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '阜阳师范大学西湖校区地图',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-09-02 22:43:43'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><div class="aplayer no-destroy" data-id="464916877" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="双向加权匹配算法"><span class="site-name">双向加权匹配算法</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">阜阳师范大学西湖校区地图</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-09-02T14:39:40.977Z" title="发表于 2026-09-02 22:39:40">2026-09-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-02T14:43:43.391Z" title="更新于 2026-09-02 22:43:43">2026-09-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">690</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="阜阳师范大学西湖校区地图"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阜阳师范大学西湖校区 · 全要素路网与建筑地图</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #e4ecf3;
+      display: flex;
+      justify-content: center;
+      padding: 20px 10px;
+    }
+    .map-card {
+      max-width: 820px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .header {
+      padding: 14px 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .title { font-size: 16px; font-weight: 700; color: #1e293b; }
+    .tag {
+      font-size: 12px;
+      font-weight: 600;
+      background: #eff6ff;
+      color: #2563eb;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    .map-box {
+      position: relative;
+      width: 100%;
+      padding-bottom: 164%;
+      background: #f1f5f9;
+    }
+    svg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+
+    /* 建筑物多边形交互样式 */
+    .building-poly {
+      cursor: pointer;
+      transition: fill 0.2s, filter 0.2s, stroke 0.2s;
+    }
+    .building-poly:hover {
+      fill: #bfdbfe !important;
+      stroke: #2563eb !important;
+      filter: drop-shadow(0 4px 8px rgba(37, 99, 235, 0.25));
+    }
+
+    /* 模态弹窗 */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(4px);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .modal.active { display: flex; }
+    .modal-card {
+      background: #ffffff;
+      max-width: 480px;
+      width: 88%;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      overflow: hidden;
+      animation: modalFade 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .modal-header {
+      padding: 16px 20px;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-header h2 { font-size: 17px; color: #0f172a; font-weight: 700; }
+    .modal-body {
+      padding: 20px;
+      color: #334155;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .modal-footer {
+      padding: 12px 20px;
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      text-align: right;
+    }
+    .modal-footer button {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 7px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    @keyframes modalFade {
+      from { transform: scale(0.94); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="map-card">
+  <div class="header">
+    <span class="title">阜阳师范大学西湖校区 · 平面图</span>
+    <span class="tag">路网 + 建筑一体化</span>
+  </div>
+
+  <div class="map-box">
+    <svg viewBox="0 0 1000 1640" preserveAspectRatio="none">
+      <!-- 1. 最底层：基础绿地与水体背景 -->
+      <rect x="0" y="0" width="1000" height="1640" fill="#edf2f7" />
+      <path d="M 48,64 L 180,64 Q 210,190 180,320 L 48,320 Z" fill="#cfe6f9" opacity="0.6" />
+      <rect x="455" y="1050" width="85" height="260" rx="16" fill="#c3e8cd" opacity="0.7" />
+
+      <!-- ================= 2. 建筑物图层 (垫在道路层下方) ================= -->
+      <g id="campus-buildings">
+        <!-- 建筑轮廓 -->
+        <g class="building-polygons">
+          <polygon points="91,1285 91,1329 215,1329 215,1287" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="新工科楼C楼(西)" class="building-poly" />
+          <polygon points="249,1285 247,1333 369,1335 371,1291" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="新工科楼C楼(东)" class="building-poly" />
+          <polygon points="87,1387 89,1431 211,1433 209,1391" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="实训楼南座" class="building-poly" />
+          <polygon points="249,1391 247,1435 373,1437 373,1391" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="实训楼北座" class="building-poly" />
+          <polygon points="69,1003 131,1001 157,991 169,991 181,999 189,1021 189,1033 181,1041 181,1077 207,1081 211,1121 181,1123 185,1157 211,1161 209,1191 69,1197 67,1159 87,1157 85,1121 69,1119" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="生物与食品工程学院 (躬行4/5号楼)" class="building-poly" />
+          <polygon points="253,1043 355,1047 359,1035 369,1035 371,1115 359,1117 355,1079 277,1077 275,1117 267,1117 265,1081 249,1079" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="物理与电子工程学院 (躬行3号楼)" class="building-poly" />
+          <polygon points="257,1121 369,1119 371,1197 361,1195 357,1157 253,1157" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="计算机与信息工程学院 (躬行2号楼)" class="building-poly" />
+          <polygon points="291,1203 367,1201 369,1237 277,1241 275,1213 289,1213" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="实验楼A号楼 (躬行1号楼)" class="building-poly" />
+          <polygon points="97,813 91,907 217,959 233,929 199,913 207,887 221,887 233,881 237,871 237,859 233,847 233,813" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="数学与统计学院 (躬行6号楼)" class="building-poly" />
+          <polygon points="451,1539 449,1563 549,1561 547,1535" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="南门门岗" class="building-poly" />
+          <polygon points="355,793 357,807 363,811 363,827 439,847 469,853 497,853 523,853 561,845 591,835 621,827 623,807 631,805 629,789" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="逸夫图书馆" class="building-poly" />
+          <polygon points="439,689 437,723 547,721 545,687" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="正行楼 (综合楼)" class="building-poly" />
+          <polygon points="477,719 479,787 517,787 515,721" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="正行楼报告厅" class="building-poly" />
+          <polygon points="733,821 707,835 691,843 687,851 683,865 683,897 793,897 791,871 749,867 751,849 793,851 793,823 751,823 749,807 735,807" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="瑾园食堂 (第一食堂)" class="building-poly" />
+          <polygon points="809,813 811,849 835,849 835,813" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="4号楼" class="building-poly" />
+          <polygon points="811,873 813,907 839,911 839,871" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="5号楼(南)" class="building-poly" />
+          <polygon points="605,1039 609,1071 677,1071 675,1055 725,1053 721,1023 673,1023 671,1039" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="6号楼" class="building-poly" />
+          <polygon points="743,1009 747,1041 767,1041 767,1023 845,1023 845,999 767,999 765,1009" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="8号楼" class="building-poly" />
+          <polygon points="767,1079 771,1111 841,1113 839,1079" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="博雅东苑9B栋" class="building-poly" />
+          <polygon points="623,1197 627,1221 695,1221 697,1203 769,1205 769,1189 831,1187 831,1161 759,1161 755,1177 685,1175 679,1193" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="博雅东苑宿舍区" class="building-poly" />
+          <polygon points="743,697 743,727 837,727 835,697" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="5号楼(北)" class="building-poly" />
+          <polygon points="747,617 745,649 839,645 835,617" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="3号楼" class="building-poly" />
+          <polygon points="747,545 749,573 839,571 839,545" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="2号楼" class="building-poly" />
+          <polygon points="741,479 745,499 839,497 835,467 747,471 749,479" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="1号楼" class="building-poly" />
+          <polygon points="741,395 741,407 749,407 747,425 837,423 837,397" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="留学生公寓" class="building-poly" />
+          <polygon points="421,89 427,113 455,117 459,99" fill="#c3e8cb" stroke="#9dd5a4" stroke-width="1.2" data-name="西湖广场西绿地" class="building-poly" />
+          <polygon points="503,95 503,115 539,113 539,85" fill="#c3e8cb" stroke="#9dd5a4" stroke-width="1.2" data-name="西湖广场东绿地" class="building-poly" />
+          <polygon points="113,115 111,225 307,217 301,117" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="西湖校区体育馆" class="building-poly" />
+          <polygon points="389,447 455,429 463,453 515,449 515,423 585,447 595,409 509,395 507,365 613,369 607,327 371,331 381,377 459,369 457,395 373,415" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="景行楼 (主楼)" class="building-poly" />
+          <polygon points="699,309 699,339 709,339 711,331 731,329 729,307" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" data-name="变电房/配套房" class="building-poly" />
+          <polygon points="655,241 657,273 821,275 821,237" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="经济学院 (汉风楼南翼)" class="building-poly" />
+          <polygon points="661,131 669,217 695,215 685,133" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="汉风楼西配楼" class="building-poly" />
+          <polygon points="693,189 807,189 807,177 831,177 823,111 693,113 695,133 703,133 703,173 689,173" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="历史文化与旅游学院 (汉风楼)" class="building-poly" />
+          <polygon points="127,755 255,763 259,693 133,689" fill="#d6edd9" stroke="#9dd5a4" stroke-width="1.2" data-name="室外篮球场" class="building-poly" />
+          <polygon points="135,691 87,687 81,751 127,751" fill="#dce7f5" stroke="#b7cde6" stroke-width="1.2" data-name="排球场/器械区" class="building-poly" />
+          <polygon points="147,283 333,285 263,679 115,675" fill="#cce8cf" stroke="#9dd5a4" stroke-width="1.2" data-name="西湖校区西操场" class="building-poly" />
+          <polygon points="605,1280 607,1458 585,1512 585,1544 853,1540 855,1230" fill="#cce8cf" stroke="#9dd5a4" stroke-width="1.2" data-name="西湖校区东南操场" class="building-poly" />
+        </g>
+
+        <!-- 居中建筑文字标注 -->
+        <g class="building-labels" pointer-events="none">
+          <text x="153" y="1312" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">新工科C(西)</text>
+          <text x="309" y="1315" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">新工科C(东)</text>
+          <text x="149" y="1415" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">实训楼南</text>
+          <text x="311" y="1418" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">实训楼北</text>
+          <text x="151" y="1091" fill="#1e3a5f" font-size="10" font-weight="600" text-anchor="middle">生工学院 (躬行4/5)</text>
+          <text x="313" y="1083" fill="#1e3a5f" font-size="10" font-weight="600" text-anchor="middle">物电学院 (躬行3)</text>
+          <text x="328" y="1162" fill="#1e3a5f" font-size="10" font-weight="600" text-anchor="middle">计信学院 (躬行2)</text>
+          <text x="311" y="1222" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">实验楼A (躬行1)</text>
+          <text x="203" y="885" fill="#1e3a5f" font-size="10" font-weight="600" text-anchor="middle">数统学院 (躬行6)</text>
+          <text x="499" y="1554" fill="#64748b" font-size="8" font-weight="600" text-anchor="middle">南门</text>
+          <text x="502" y="829" fill="#1e3a5f" font-size="11" font-weight="700" text-anchor="middle">逸夫图书馆</text>
+          <text x="492" y="709" fill="#1e3a5f" font-size="10" font-weight="700" text-anchor="middle">正行楼</text>
+          <text x="497" y="758" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">报告厅</text>
+          <text x="739" y="851" fill="#c2410c" font-size="10" font-weight="700" text-anchor="middle">瑾园食堂</text>
+          <text x="823" y="835" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">4号楼</text>
+          <text x="826" y="895" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">5号楼</text>
+          <text x="670" y="1051" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">6号楼</text>
+          <text x="781" y="1022" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">8号楼</text>
+          <text x="805" y="1100" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">9B栋</text>
+          <text x="727" y="1195" fill="#1e3a5f" font-size="9" font-weight="600" text-anchor="middle">东苑宿舍区</text>
+          <text x="790" y="716" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">5号楼</text>
+          <text x="792" y="636" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">3号楼</text>
+          <text x="794" y="563" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">2号楼</text>
+          <text x="776" y="486" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">1号楼</text>
+          <text x="775" y="413" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle">留学生公寓</text>
+          <text x="208" y="173" fill="#1e3a5f" font-size="11" font-weight="700" text-anchor="middle">西湖校区体育馆</text>
+          <text x="487" y="404" fill="#1e3a5f" font-size="12" font-weight="700" text-anchor="middle">景行楼 (主楼)</text>
+          <text x="739" y="261" fill="#1e3a5f" font-size="10" font-weight="600" text-anchor="middle">经济学院</text>
+          <text x="744" y="161" fill="#1e3a5f" font-size="10" font-weight="600" text-anchor="middle">历史文化与旅游学院</text>
+          <text x="194" y="729" fill="#166534" font-size="10" font-weight="600" text-anchor="middle">篮球场</text>
+          <text x="215" y="485" fill="#166534" font-size="12" font-weight="700" text-anchor="middle">西湖校区西操场</text>
+          <text x="682" y="1431" fill="#166534" font-size="12" font-weight="700" text-anchor="middle">西湖校区东南操场</text>
+        </g>
+      </g>
+
+      <!-- ================= 3. 道路数据定义 ================= -->
+      <defs>
+        <!-- 外部市政道路（黄色公路） -->
+        <g id="city-highways">
+          <path d="M 37,25 L 897,45 L 903,1597 L 7,1623 L 35,27" />
+        </g>
+
+        <!-- 校园主干纵横通道 (主轴环路)[cite: 2] -->
+        <g id="campus-arterials">
+          <path d="M 491,1597 L 491,1529 L 447,1519 L 431,1511 L 423,1497 L 417,1491 L 411,1471 L 407,1455 L 403,1259 L 409,1023 L 407,867 L 273,777 L 365,311 L 363,189 L 371,151 L 403,143 L 611,141 L 619,299 L 713,735 L 715,781 L 647,829 L 587,857 L 593,1451 L 571,1511 L 531,1523 L 487,1529" />
+          <path d="M 407,1457 L 59,1459 L 67,919 L 71,771 L 271,771" />
+          <path d="M 403,1261 L 591,1263" />
+          <path d="M 403,1261 L 65,1239" />
+          <path d="M 409,1023 L 343,1015 L 275,1005 L 237,985 L 71,911" />
+          <path d="M 411,1023 L 495,1031 L 589,1023" />
+          <path d="M 405,919 L 807,919" />
+          <path d="M 295,657 L 693,651" />
+          <path d="M 327,479 L 655,473" />
+          <path d="M 363,311 L 619,299" />
+          <path d="M 491,137 L 491,37" />
+          <path d="M 271,775 L 239,983" />
+          <path d="M 61,1357 L 157,1359" />
+        </g>
+
+        <!-- 斜交支路、曲线环道与主要连通线[cite: 2] -->
+        <g id="campus-diagonals-curves">
+          <path d="M 615,139 L 645,103 L 837,99 L 849,105 L 847,215 L 847,275 L 831,291 L 791,283 L 623,287" />
+          <path d="M 615,237 L 707,239 L 755,219 L 843,219" />
+          <path d="M 633,349 L 739,377 L 843,391 L 853,407 L 851,759" />
+          <path d="M 749,281 L 739,371" />
+          <path d="M 363,311 L 330,478" />
+          <path d="M 619,299 L 653,474" />
+          <path d="M 330,478 L 360,656" />
+          <path d="M 653,474 L 626,652" />
+          <path d="M 363,763 L 637,759" />
+          <path d="M 361,759 L 353,767 L 355,829" />
+          <path d="M 695,663 L 655,721 L 643,759 L 647,829" />
+          <path d="M 563,675 L 651,723" />
+          <path d="M 565,719 L 645,747" />
+          <path d="M 433,653 L 435,759" />
+          <path d="M 561,651 L 567,757" />
+          <path d="M 355,829 Q 498,875 647,829" />
+          <path d="M 273,777 Q 495,835 715,781" />
+          <path d="M 587,1023 L 735,991 L 803,955 L 805,919 L 807,859 L 797,755" />
+          <path d="M 715,779 L 797,755 L 831,755 L 851,763 L 851,789 L 851,843 L 849,863 L 853,959 L 855,1207 L 795,1227 L 703,1243 L 629,1257 L 587,1261" />
+          <path d="M 589,1183 L 739,1159 L 765,1151 L 851,1145" />
+          <path d="M 589,1079 L 645,1087 L 743,1073 L 737,1047 L 733,987" />
+          <path d="M 735,987 L 731,915" />
+          <path d="M 747,1049 L 853,1035" />
+          <path d="M 619,1083 L 615,1179" />
+          <path d="M 643,1087 L 659,1171" />
+          <path d="M 445,1031 Q 425,1200 445,1370" />
+          <path d="M 552,1031 Q 572,1200 552,1370" />
+        </g>
+
+        <!-- 局部细密小道、广场台阶与楼宇通道[cite: 2] -->
+        <g id="campus-minor-lanes">
+          <path d="M 357,191 L 333,191 L 325,241 L 295,251 L 119,247 L 107,231 L 101,205 L 99,119 L 115,107 L 311,107 L 327,127 L 329,157 L 331,195" />
+          <path d="M 334,510 L 648,506" />
+          <path d="M 340,540 L 642,536" />
+          <path d="M 346,570 L 636,566" />
+          <path d="M 352,600 L 630,596" />
+          <path d="M 358,630 L 624,626" />
+          <path d="M 495,473 L 493,651" />
+          <path d="M 241,979 L 227,1001 L 229,1245" />
+          <path d="M 243,991 L 247,1243" />
+          <path d="M 229,1197 L 245,1197" />
+          <path d="M 67,1060 L 230,1060" />
+          <path d="M 67,1130 L 230,1130" />
+          <path d="M 160,1240 L 160,1459" />
+          <path d="M 735,375 L 729,431 L 735,475 L 737,515 L 739,543 L 735,579 L 727,661 L 723,683 L 707,695" />
+          <path d="M 731,659 L 815,661" />
+          <path d="M 671,511 L 699,511 L 709,543 L 709,557 L 695,563 L 679,569" />
+          <path d="M 705,519 L 851,513" />
+          <path d="M 713,541 L 737,543" />
+          <path d="M 713,559 L 731,575" />
+          <path d="M 695,565 L 731,605" />
+          <path d="M 737,607 L 753,611 L 843,617" />
+          <path d="M 651,1131 L 719,1129" />
+          <path d="M 743,1075 L 743,1101 L 739,1155" />
+          <path d="M 745,1101 L 755,1107 L 759,1139 L 743,1149" />
+          <path d="M 739,1105 L 723,1113 L 723,1143 L 735,1149" />
+          <path d="M 757,1127 L 851,1129" />
+          <path d="M 747,1063 L 771,1087 L 785,1143" />
+          <path d="M 495,887 L 497,915" />
+          <path d="M 499,919 L 493,949 L 475,957 L 473,971 L 473,979 L 491,991 L 511,991 L 519,979 L 519,963 L 501,949" />
+          <path d="M 523,971 L 535,971 L 563,971 L 585,971" />
+          <path d="M 473,969 L 409,973" />
+          <path d="M 497,991 L 495,1027" />
+        </g>
+      </defs>
+
+      <!-- ================= 4. 道路底层轮廓 (盖在建筑之上) ================= -->
+      <!-- 校园内路外轮廓 -->
+      <g stroke="#cbd5e1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <use href="#campus-arterials" stroke-width="17" />
+        <use href="#campus-diagonals-curves" stroke-width="12" />
+        <use href="#campus-minor-lanes" stroke-width="7" />
+      </g>
+      <!-- 市政道路外轮廓 -->
+      <g stroke="#dfb971" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <use href="#city-highways" stroke-width="48" />
+      </g>
+
+      <!-- ================= 5. 道路顶层面层 (熔合路芯) ================= -->
+      <!-- 校园内部无缝白芯路面 -->
+      <g stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <use href="#campus-arterials" stroke-width="13" />
+        <use href="#campus-diagonals-curves" stroke-width="9" />
+        <use href="#campus-minor-lanes" stroke-width="4.5" />
+      </g>
+      <!-- 市政主干道路芯 (盖住白路伸出来的圆头) -->
+      <g stroke="#fedb9b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <use href="#city-highways" stroke-width="44" />
+      </g>
+
+      <!-- 南京路车道分隔虚线[cite: 2] -->
+      <line x1="24" y1="0" x2="24" y2="1640" stroke="#ffffff" stroke-width="2" stroke-dasharray="10,8" />
+
+      <!-- ================= 6. 顶层文字与路标 ================= -->
+      <g font-size="12" font-weight="700" fill="#475569" text-anchor="middle">
+        <text x="500" y="38" letter-spacing="14">清 河 西 路</text>
+        <text x="500" y="1613" letter-spacing="14">淮 河 路</text>
+        <text x="24" y="820" writing-mode="vertical-rl" letter-spacing="16">南 京 路</text>
+      </g>
+
+      <g font-size="9" font-weight="600" fill="#64748b" text-anchor="middle">
+        <rect x="250" y="240" width="56" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+        <text x="278" y="253">博学大道</text>
+
+        <rect x="686" y="240" width="56" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+        <text x="714" y="253">厚德大道</text>
+
+        <rect x="472" y="322" width="52" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+        <text x="498" y="335">励学路</text>
+
+        <rect x="472" y="465" width="52" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+        <text x="498" y="478">至善路</text>
+
+        <rect x="472" y="858" width="52" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+        <text x="498" y="871">道路7</text>
+
+        <rect x="472" y="1022" width="52" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+        <text x="498" y="1035">勤行路</text>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<!-- 点击建筑查看详情模态弹窗 -->
+<div id="infoModal" class="modal">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h2 id="modalTitle">建筑详情</h2>
+    </div>
+    <div class="modal-body" id="modalDesc">
+      详细信息载入中...
+    </div>
+    <div class="modal-footer">
+      <button id="modalClose">确定</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 建筑交互与点击弹窗
+  const polys = document.querySelectorAll('.building-poly');
+  const modal = document.getElementById('infoModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalClose = document.getElementById('modalClose');
+
+  polys.forEach(item => {
+    item.addEventListener('click', () => {
+      const name = item.getAttribute('data-name');
+      modalTitle.textContent = name;
+      modalDesc.innerHTML = `<strong>${name}</strong> 是阜阳师范大学西湖校区的重要组成部分，功能运行良好。`;
+      modal.classList.add('active');
+    });
+  });
+
+  const closeModal = () => modal.classList.remove('active');
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+</script>
+
+</body>
+</html></article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/post/31.html" title="1. 填表即得10个对象"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">1. 填表即得10个对象</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">北邮 北师 法大 硕博生 合力制作</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">专为你而准备</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#modalTitle"><span class="toc-number">1.</span> <span class="toc-text">建筑详情</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/7ed08.html" title="阜阳师范大学西湖校区地图"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阜阳师范大学西湖校区地图"/></a><div class="content"><a class="title" href="/post/7ed08.html" title="阜阳师范大学西湖校区地图">阜阳师范大学西湖校区地图</a><time datetime="2026-09-02T14:39:40.977Z" title="发表于 2026-09-02 22:39:40">2026-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/31.html" title="1. 填表即得10个对象"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1. 填表即得10个对象"/></a><div class="content"><a class="title" href="/post/31.html" title="1. 填表即得10个对象">1. 填表即得10个对象</a><time datetime="2026-08-01T07:20:07.879Z" title="发表于 2026-08-01 15:20:07">2026-08-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/shuoming.html" title="匹配算法详细"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="匹配算法详细"/></a><div class="content"><a class="title" href="/post/shuoming.html" title="匹配算法详细">匹配算法详细</a><time datetime="2026-07-31T16:00:00.000Z" title="发表于 2026-08-01 00:00:00">2026-08-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By 北邮 北师 法大 硕博生 合力制作</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const abcjsInit = () => {
+    const abcjsFn = () => {
+      document.querySelectorAll(".abc-music-sheet").forEach(ele => {
+        ABCJS.renderAbc(ele, ele.innerHTML, {responsive: 'resize'})
+      })
+    }
+    
+    typeof ABCJS === 'object' ? abcjsFn()
+      : getScript('https://cdn.jsdelivr.net/npm/abcjs/dist/abcjs-basic-min.min.js').then(abcjsFn)
+  }
+
+  window.pjax ? abcjsInit() : window.addEventListener('load', abcjsInit)
+})()</script></div><div class="aplayer no-destroy" data-id="5285574294" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text=".....................love !.....................,欢迎您,.......欢迎点击.......,.......,ω.ω ω.ω,♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥" data-fontsize="25px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
